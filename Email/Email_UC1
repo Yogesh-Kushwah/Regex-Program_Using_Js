@@ -1,0 +1,5 @@
+const emailPatternUC1 = /^abc@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$/;
+
+console.log(emailPatternUC1.test("abc@yahoo.com")); // true
+console.log(emailPatternUC1.test("xyz@gmail.com")); 
+console.log(emailPatternUC1.test("abc123@abc.com")); // false
