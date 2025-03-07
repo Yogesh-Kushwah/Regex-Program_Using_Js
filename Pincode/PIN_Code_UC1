@@ -1,0 +1,12 @@
+// The Postal Index Number (PIN) or PIN Code is a 6 digit code of Post Office numbering used by India Post. Create a regex pattern to validate pincode 400088
+
+const pinCodePattern = /^[1-9][0-9]{5}$/;
+
+function isValidPinCode(pinCode) {
+    return pinCodePattern.test(pinCode);
+}
+
+// Example usage:
+console.log(isValidPinCode("400088")); 
+console.log(isValidPinCode("000088")); 
+console.log(isValidPinCode("4008A8")); 

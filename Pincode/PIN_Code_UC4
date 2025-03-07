@@ -1,0 +1,12 @@
+const pinCodePattern = /^[0-9]{3}\s?[0-9]{3}$/;
+
+function isValidPinCode(pinCode) {
+    return pinCodePattern.test(pinCode);
+}
+
+// Example usage:
+console.log(isValidPinCode("400088"));   
+console.log(isValidPinCode("400 088"));  
+console.log(isValidPinCode("A400088"));  
+console.log(isValidPinCode("400  088")); 
+
